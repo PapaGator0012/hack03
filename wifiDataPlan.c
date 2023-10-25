@@ -37,7 +37,18 @@ if ( datalimit==0){
     printf("Monetlhy limit met");
 
 }
+ // it used gbs is not ZERO 
+else if (usedGB!=0){
 
+    dataOutrun=daysRemaining*dailyusage;
+    datalimit=GBremaining/ daysRemaining;
+
+    printf(" days used = %f , days remaining = %f",days,daysRemaining);
+    printf("Average daily used = %f ",dailyusage);
+    printf("if data used on %f /GB/day , then it will exceed on %f",dailyusage,dataOutrun);
+    printf("\n");
+    printf("Use data only %d /GB/day or you data plan reached its limit",datalimit);
+}
 
 
 
