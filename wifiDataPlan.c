@@ -8,7 +8,7 @@ int main()
 
 {
 
-float days,totalGB,usedGB,daysRemaining,dailyusage,dataOutrun,GBremaining,datalimit;
+float days,totalGB,usedGB,daysRemaining,dailyusage,dataOutrun,GBremaining,datalimit,avguse,avggb;
 
 printf("Enter your GB's for your 30 Days plan : ");
 scanf("%f",&totalGB);
@@ -50,7 +50,19 @@ else if (usedGB!=0){
     printf("Use data only %d /GB/day or you data plan reached its limit",datalimit);
 }
 
+// when your gbs become zero
 
+else if ( usedGB==0){
+
+avguse=totalGB /30;
+GBremaining= avguse + totalGB;
+avggb = GBremaining/daysRemaining;
+printf("days used = %f , days remaning = %f , avg daily used = %f ",days,daysRemaining,dailyusage);
+printf("\n");
+printf("You are below from avg daily use  %f GB/day usage \n you can surpass avg used to %f GB/day ",avguse,avggb);
+
+
+}
 
 
 
