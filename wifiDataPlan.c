@@ -34,8 +34,8 @@ if ( datalimit==0){
     printf("\n");
     printf(" avg Daily usage = %f GB/day",dailyusage);
     printf("\n");
-    printf("Your monthly data limit has diminished, please recharge !");
-    
+    printf("Monetlhy limit met");
+
 }
 
 
