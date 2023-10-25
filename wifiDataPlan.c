@@ -26,7 +26,17 @@ GBremaining = totalGB - usedGB;
 datalimit= GBremaining / daysRemaining ;
 dailyusage= usedGB /days;
 
+// using a conditional statement to print if the user has run out of PACKAGE 
 
+if ( datalimit==0){
+
+    printf(" Days used = %f , Days remanining = %f",days,daysRemaining);
+    printf("\n");
+    printf(" avg Daily usage = %f GB/day",dailyusage);
+    printf("\n");
+    printf("Your monthly data limit has diminished, please recharge !");
+    
+}
 
 
 
