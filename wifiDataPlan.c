@@ -8,7 +8,7 @@ int main()
 
 {
 
-float days,totalGB,usedGB,daysRemaining,dailyusage,dataCap,GBremaining,datalimit;
+float days,totalGB,usedGB,daysRemaining,dailyusage,dataOutrun,GBremaining,datalimit;
 
 printf("Enter your GB's for your 30 Days plan : ");
 scanf("%f",&totalGB);
@@ -18,6 +18,13 @@ scanf("%f",&days);
 
 printf(" the amount of GBs used till present day : ");
 scanf("%f",&usedGB);
+
+// formulas 
+
+daysRemaining = 30 - days;
+GBremaining = totalGB - usedGB;
+datalimit= GBremaining / daysRemaining ;
+dailyusage= usedGB /days;
 
 
 
