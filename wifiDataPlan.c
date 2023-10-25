@@ -8,6 +8,9 @@ int main()
 
 {
 
+float days,totalGB,usedGB,daysRemaining,dailyusage,dataCap,GBremaining,datalimit;
+
+
 
 
 
