@@ -10,6 +10,15 @@ int main()
 
 float days,totalGB,usedGB,daysRemaining,dailyusage,dataCap,GBremaining,datalimit;
 
+printf("Enter your GB's for your 30 Days plan : ");
+scanf("%f",&totalGB);
+
+printf("enter the present day from the 30 days plan : ");
+scanf("%f",&days);
+
+printf(" the amount of GBs used till present day : ");
+scanf("%f",&usedGB);
+
 
 
 
